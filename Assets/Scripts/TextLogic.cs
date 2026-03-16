@@ -3,10 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class TextLogic : MonoBehaviour
 {
+    public GameObject LevelCompleteUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //UI stays hidden to start level
+        LevelCompleteUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -15,6 +17,10 @@ public class TextLogic : MonoBehaviour
         
     }
 
+    public void ShowLevelComplete()
+    {
+        LevelCompleteUI.SetActive(true);
+    }
     public void nextLevel()
     {
         SceneManager.LoadScene("Game2");
@@ -25,7 +31,7 @@ public class TextLogic : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void settingsScne()
+    public void settingsScene()
     {
         SceneManager.LoadScene("SettingScene");
     }

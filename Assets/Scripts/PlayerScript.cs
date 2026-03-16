@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     private int keysCollected = 0;
 
     public GameObject finish;
+    public TextLogic uiLogic;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,6 +50,10 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject == finish && keysCollected >= totalKeys)
         {
             Debug.Log("Player has reached the finish!");
+            
+            if (uiLogic != null)
+                uiLogic.ShowLevelComplete();
+
             Destroy(gameObject);
         }
     }
