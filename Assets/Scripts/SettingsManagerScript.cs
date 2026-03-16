@@ -30,4 +30,10 @@ public class SettingsManagerScript : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
+    public void quitGame()
+    {
+        //Allows user to quit game
+        Application.Quit();
+        Debug.Log("User Quit Game");
+    }
 }

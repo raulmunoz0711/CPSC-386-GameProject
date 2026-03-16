@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class TextLogic : MonoBehaviour
@@ -14,7 +15,11 @@ public class TextLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Opens settings at any point during the game
+        if (Keyboard.current.escapeKey.isPressed)
+        {
+            SceneManager.LoadScene("SettingScene");
+        }
     }
 
     public void ShowLevelComplete()
