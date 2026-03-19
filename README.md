@@ -4,9 +4,13 @@ I am making a Maze Game that contains 3 levels. To complete each maze, you must 
 
 ## **References**
 
-AP, C. E. P. (2020, April 20). Unity 2D Maze Game Tutorial - 1 Hour. Www.youtube.com. https://www.youtube.com/watch?v=yGidpBVWPx0
-Free Rotating Key - Animated Pixel Art by Frakassets. (n.d.). Itch.io. https://frakassets.itch.io/free-rotating-key
-Musical Toasters. (2019, June 4). Good Egg Galaxy - Super Mario Galaxy Music. YouTube. https://www.youtube.com/watch?v=56TfZJoZxv8&list=RD56TfZJoZxv8
-Unity Technologies. (2010, October 23). Using singleton for background music. Unity Discussions. https://discussions.unity.com/t/using-singleton-for-background-music/8967
-Wild Cockatiel Games. (2024, October 22). How to Setup Animator and Animations in Unity 2D. YouTube. https://www.youtube.com/watch?v=AdQz2wStdLY
+AP, C. E. P. (2020, April 20). Unity 2D Maze Game Tutorial - 1 Hour. Www.youtube.com. https://www.youtube.com/watch?v=yGidpBVWPx0  
+
+Free Rotating Key - Animated Pixel Art by Frakassets. (n.d.). Itch.io. https://frakassets.itch.io/free-rotating-key  
+
+Musical Toasters. (2019, June 4). Good Egg Galaxy - Super Mario Galaxy Music. YouTube. https://www.youtube.com/watch?v=56TfZJoZxv8&list=RD56TfZJoZxv8  
+
+Unity Technologies. (2010, October 23). Using singleton for background music. Unity Discussions. https://discussions.unity.com/t/using-singleton-for-background-music/8967  
+
+Wild Cockatiel Games. (2024, October 22). How to Setup Animator and Animations in Unity 2D. YouTube. https://www.youtube.com/watch?v=AdQz2wStdLY  
 
