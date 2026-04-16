@@ -51,6 +51,12 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
+        if (collision.CompareTag("bomb"))
+            {
+                //Die(); Will be defined
+                Debug.Log("Player has died");
+            }
+
         //Destroys player object when finish is touched
         if (collision.gameObject == finish && keysCollected >= totalKeys)
         {
