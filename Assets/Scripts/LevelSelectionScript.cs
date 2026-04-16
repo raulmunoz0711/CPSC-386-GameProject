@@ -73,6 +73,13 @@ public class LevelSelectionScript : MonoBehaviour
         }
         
     }
+
+    public void tutorialLevel()
+    {
+        SceneManager.LoadScene("Tutorial");
+        Debug.Log("Player loaded tutorial");
+    }
+
     public void returnMainmenu()
     {
         SceneManager.LoadScene("Main Menu");
