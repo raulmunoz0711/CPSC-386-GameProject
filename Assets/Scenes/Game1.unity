@@ -1581,7 +1581,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215688, g: 0.3960935, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.960298, g: 0.92156863, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4712,7 +4712,7 @@ GameObject:
   - component: {fileID: 1532754303}
   m_Layer: 0
   m_Name: bombObject
-  m_TagString: bomb
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4769,7 +4769,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4853,8 +4853,8 @@ Transform:
   m_GameObject: {fileID: 1532754302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.88, y: -1.8, z: 0}
-  m_LocalScale: {x: 3.777189, y: 3.777189, z: 3.777189}
+  m_LocalPosition: {x: -2.57, y: 1.77, z: 0}
+  m_LocalScale: {x: 5.2314067, y: 5.2314067, z: 5.2314067}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

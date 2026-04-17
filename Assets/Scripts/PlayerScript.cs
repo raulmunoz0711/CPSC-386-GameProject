@@ -51,10 +51,14 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        if (collision.CompareTag("bomb"))
+        //Checks if the player has collided with a bomb
+        if (collision.CompareTag("Bomb"))
             {
-                //Die(); Will be defined
+                //Destroys both the bomb and player
+                Debug.Log("Bomb has been activated");
                 Debug.Log("Player has died");
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
             }
 
         //Destroys player object when finish is touched
