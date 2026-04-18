@@ -14,7 +14,11 @@ OpenAI. “ChatGPT.” Chat.openai.com, OpenAI, 2025, chat.openai.com.
 
 Unity Technologies. (2010, October 23). Using singleton for background music. Unity Discussions. https://discussions.unity.com/t/using-singleton-for-background-music/8967  
 
-Wild Cockatiel Games. (2024, October 22). How to Setup Animator and Animations in Unity 2D. YouTube. https://www.youtube.com/watch?v=AdQz2wStdLY  
+Wild Cockatiel Games. (2024, October 22). How to Setup Animator and Animations in Unity 2D. YouTube. https://www.youtube.com/watch?v=AdQz2wStdLY
+
+Unity Technologies. (2010, October 23). Using singleton for background music. Unity Discussions. https://discussions.unity.com/t/using-singleton-for-background-music/8967
+
+Wild Cockatiel Games. (2024, October 22). How to Setup Animator and Animations in Unity 2D. YouTube. https://www.youtube.com/watch?v=AdQz2wStdLY
 
 -----------------------------------------------------------------------------  
 Unity 2D Maze Game Tutorial. Light Usage, Heavy Modification. I only used this tutorial to get an idea for how I want to go about building the maze game. The video was not followed and about the first 10 minutes is all that was really used, but I believe it still deserved credit for giving me straight 1-1 ideas for what I should do in my game. No code was taken from the video.  
@@ -31,3 +35,7 @@ Unity Technologies: See how others add music to all scenes and ensure it survive
 Musical Toasters - This is where I located the sprites used for the key animation.  
 
 Wild Cockatiel Games - This video was used for me to gain an understanding of how to implement a simple animation into my game.
+
+SFX WARD - Where the key sound effect was found.
+
+Explosion Sound Effect. - Is the bomb explosion sound effect. 
