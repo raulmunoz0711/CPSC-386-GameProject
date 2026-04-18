@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BombSpawnerScript : MonoBehaviour
 {
-    public GameObject bomb;     // prefab to spawn
+    public GameObject bomb;
     public float spawnRate = 2f;
     private float timer = 0f;
 

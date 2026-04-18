@@ -6,6 +6,7 @@ public class TextLogic : MonoBehaviour
 {
     public GameObject LevelCompleteUI;
     public GameObject GamePausedUI;
+    public GameObject GameOverUI;
     private bool GameisPaused = false;
 
     public string nextLevelScene;
@@ -14,6 +15,7 @@ public class TextLogic : MonoBehaviour
     {
         //UI stays hidden to start level
         LevelCompleteUI.SetActive(false);
+        GameOverUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +32,11 @@ public class TextLogic : MonoBehaviour
     public void ShowLevelComplete()
     {
         LevelCompleteUI.SetActive(true);
+    }
+
+    public void GameOver()
+    {
+        GameOverUI.SetActive(true);
     }
     public void nextLevel()
     {
@@ -97,5 +104,11 @@ public class TextLogic : MonoBehaviour
         GameisPaused = false;
         GamePausedUI.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Player has restarted level");
     }
 }

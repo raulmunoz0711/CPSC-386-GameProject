@@ -13,6 +13,10 @@ public class PlayerScript : MonoBehaviour
     public GameObject finish;
     public TextLogic uiLogic;
 
+    public AudioSource audioSource;
+    public AudioClip keySound;
+    public AudioClip bombSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,6 +45,8 @@ public class PlayerScript : MonoBehaviour
             keysCollected++;                //Will increase +1 when key collected
             Destroy(collision.gameObject);  //The key is no longer on screen
             
+            audioSource.PlayOneShot(keySound);
+            
             //Will log that key that has been collected
             Debug.Log("A key has been collected.");
 
@@ -57,8 +63,15 @@ public class PlayerScript : MonoBehaviour
                 //Destroys both the bomb and player
                 Debug.Log("Bomb has been activated");
                 Debug.Log("Player has died");
+                
+                audioSource.PlayOneShot(bombSound);
+                
                 Destroy(collision.gameObject);
-                Destroy(gameObject);
+                //Adds a delay to the player death
+                Destroy(gameObject, 1f);
+
+                if (uiLogic != null)
+                    uiLogic.GameOver();
             }
 
         //Destroys player object when finish is touched
