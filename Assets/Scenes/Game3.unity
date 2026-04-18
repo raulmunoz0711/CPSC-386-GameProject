@@ -1613,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   bomb: {fileID: 2824054944049852457, guid: 75bd96850816054448651db8d47537e7, type: 3}
-  spawnRate: 3
+  spawnRate: 0.8
   heightOffset: 3.5
 --- !u!4 &253637657
 Transform:

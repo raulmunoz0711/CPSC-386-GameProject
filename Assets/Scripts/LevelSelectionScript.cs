@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LevelSelectionScript : MonoBehaviour
 {
     /// Implemented with AI ///
+    public Button tutorial;
     public Button level1Button;
     public Button level2Button;
     public Button level3Button;
@@ -14,11 +15,15 @@ public class LevelSelectionScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        /// Implemented with AI ///
-         // Level 1 is always unlocked
-        if (level1Button != null)
-            level1Button.interactable = true;
+        //Tutorial is always unloced
+        if (tutorial != null)
+            tutorial.interactable = true;
 
+         // Level 1 is only unlocked once tutorial is complete
+        if (level1Button != null)
+            level1Button.interactable = PlayerPrefs.GetInt("TutorialComplete", 0) == 1;
+        
+        /// Implemented with AI ///
         // Lock Level 2 if Level1 not completed
         if (level2Button != null)
             level2Button.interactable = PlayerPrefs.GetInt("Level1Complete", 0) == 1;
@@ -38,10 +43,23 @@ public class LevelSelectionScript : MonoBehaviour
         }
     }
 
+    public void tutoriallevel()
+    {
+        SceneManager.LoadScene("Tutorial");
+        Debug.Log("Player loaded tutorial.");
+    }
+
     public void level1()
     {
-        SceneManager.LoadScene("Game1");
-        Debug.Log("Player loaded game1");
+        if (PlayerPrefs.GetInt("TutorialComplete", 0) == 1) 
+        {
+            SceneManager.LoadScene("Game1");
+            Debug.Log("Player loaded game1");
+        }
+        else
+        {
+            Debug.Log("Level 1 is locked.");
+        }
     }
     public void level2()
     {
@@ -72,12 +90,6 @@ public class LevelSelectionScript : MonoBehaviour
             Debug.Log("Level 3 is locked.");
         }
         
-    }
-
-    public void tutorialLevel()
-    {
-        SceneManager.LoadScene("Tutorial");
-        Debug.Log("Player loaded tutorial");
     }
 
     public void returnMainmenu()
